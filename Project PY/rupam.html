@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project PY</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color:white;">
+    <style>
+        .section-1-img{
+    width: 70%;
+    position:relative;
+    
+    margin: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0px black;
+    
+}
+
+    </style>
+<section class="main">
+<section class="section-1">
+
+
+<div class="navbar">
+  <a href="rupam.html">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="paper.html">Paper 1</a>
+    <a href="notes.html">Notes 2</a>
+    <a href="files/MCA1_SYLLABUS_CODE1.pdf" target="_blank">Syllabus Sem - 1</a>
+    <a href="files/2SEM.pdf" target="_blank">Syllabus Sem - 2</a>
+  </div>
+  </div> 
+</div>
+<h1>Project PY</h1>
+<p>initial-scale</p>
+
+<h3>A Website for Previous Question Papars and Notes</h3>
+<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+
+
+    <a href="">
+        <img src="files/super deluxe land.jpg" class= "section-1-img">
+    </a>
+    
+    
+</section>
+</section>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</section>
+</body>
+</html>

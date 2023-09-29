@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project PY</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+</head>
+<body style="background-color:white;">
+
+
+
+
+<div class="navbar">
+  <a href="rupam.html">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="paper.html">Paper 1</a>
+    <a href="notes.html">Notes 2</a>
+    <a href="">Syllabus Sem - 1</a>
+    <a href="">Syllabus Sem - 2</a>
+  </div>
+  </div> 
+</div>
+<h1>Project PY</h1>
+<p>Question Paper</p>
+
+<h3>A Website for Previous Question Papars and Notes</h3>
+<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+
+
+
+<select id="sample">
+    <option value="files/C1.pdf" >Year - 2016</option>
+    <option value="files/C2.pdf" >Year - 2017</option>
+    <option value="files/C3.pdf">Year - 2018</option>
+    <option value="files/C3.pdf">Year - 2019</option>
+    <option value="files/C3.pdf">Year - 2020</option>
+    <option value="files/C3.pdf">Year - 2021</option>
+    <option value="files/C3.pdf">Year - 2022</option>
+    <option value="files/C3.pdf">Year - 2023</option>
+</select> 
+
+
+
+    
+
+
+
+<script type="text/javascript">
+    var urlMenu = document.getElementById('sample');
+    urlMenu.onchange = function(){
+        var userOption = this.options[this.selectedIndex];
+        if (userOption.value != "nothing") {
+            window.open(userOption.value, "Page","");
+        }
+    }
+</script>
+</section>
+</body>
+</html>
