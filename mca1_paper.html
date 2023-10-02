@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCA_1_SSTC_Final</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+</head>
+<body style="background-color:bisque;">
+
+
+
+<h1>Previous Years Question Papers</h1>
+<p>MCA 1st Semester Final Question Paper</p>
+
+<h3>A Website for CT and Final old Question Papers</h3>
+<p>Select an Option to see the Question Papers</p>
+
+
+
+
+<select id="sample">
+    <option value="" >Select an option</option>
+    <option value="files/MCA1_C++_FINAL.pdf" >C++ Programming and Data Structure</option>
+    <option value="files/MCA1_ADBMS_FINAL.pdf" >Advance Database Management System</option>
+    <option value="files/MCA1_SE_FINAL.pdf">Software Engineering</option>
+    <option value="files/MCA1_MFCS_FINAL.pdf">Mathematical Foundation of Computer Science</option>
+    <option value="files/MCA1_PCS_FINAL.pdf">Professional Communication Skills</option>
+</select> 
+
+
+
+    
+
+
+
+<script type="text/javascript">
+    var urlMenu = document.getElementById('sample');
+    urlMenu.onchange = function(){
+        var userOption = this.options[this.selectedIndex];
+        if (userOption.value != "nothing") {
+            window.open(userOption.value, "Page","");
+        }
+    }
+</script>
+</section>
+</body>
+</html>

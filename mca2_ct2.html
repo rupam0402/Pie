@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCA_2_SSTC_CT02</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+</head>
+<body style="background-color:bisque;">
+
+
+
+<h1>Project PY</h1>
+<p>MCA 2 CT - 02 Question Paper</p>
+
+<h3>A Website for Previous Question Papars and Notes</h3>
+<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+
+
+
+<select id="sample">
+    <option value="" >Select an option</option>
+    <option value="files/MCA2_JAVA_CT2.pdf" >Programming with Java</option>
+    <option value="files/MCA2_CN_CT2.pdf" >Computer Networks</option>
+    <option value="files/MCA2_AI_CT2.pdf">Artificial Intelligence & Expert system</option>
+    <option value="files/MCA2_OS_CT2.pdf">Operating System with UNIX</option>
+    <option value="files/MCA2_IMF_CT2.pdf">Introduction to Management Function</option>
+</select> 
+
+
+
+    
+
+
+
+<script type="text/javascript">
+    var urlMenu = document.getElementById('sample');
+    urlMenu.onchange = function(){
+        var userOption = this.options[this.selectedIndex];
+        if (userOption.value != "nothing") {
+            window.open(userOption.value, "Page","");
+        }
+    }
+</script>
+</section>
+</body>
+</html>

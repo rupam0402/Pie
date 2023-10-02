@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCA_1_SSTC_CT02</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+</head>
+<body style="background-color:bisque;">
+
+
+
+<h1>Previous Years Question Papers</h1>
+<p>MCA 2nd Semester CT - 02 Question Paper</p>
+
+<h3>A Website for CT and Final old Question Papers</h3>
+<p>Select an Option to see the Question Papers</p>
+
+
+
+
+
+<select id="sample">
+    <option value="" >Select an option</option>
+    <option value="files/MCA1_C++_CT2.pdf" >C++ Programming and Data Structure</option>
+    <option value="files/MCA1_ADBMS_CT2.pdf" >Advance Database Management System</option>
+    <option value="files/MCA1_SE_CT2.pdf">Software Engineering</option>
+    <option value="files/MCA1_MFCS_CT2.pdf">Mathematical Foundation of Computer Science</option>
+    <option value="files/MCA1_PCS_CT2.pdf">Professional Communication Skills</option>
+</select> 
+
+
+
+    
+
+
+
+<script type="text/javascript">
+    var urlMenu = document.getElementById('sample');
+    urlMenu.onchange = function(){
+        var userOption = this.options[this.selectedIndex];
+        if (userOption.value != "nothing") {
+            window.open(userOption.value, "Page","");
+        }
+    }
+</script>
+</section>
+</body>
+</html>
